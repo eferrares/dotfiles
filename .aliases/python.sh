@@ -10,3 +10,4 @@ alias dload='python manage.py loaddata'
 # If the South is installed
 alias dmigr='python manage.py migrate'
 alias dschema='python manage.py schemamigration'
+alias pmr='python manage.py runserver'

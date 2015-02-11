@@ -1,6 +1,6 @@
 [user]
-    name = Marcelo Tambalo
-    email = marcelo.zokis@gmail.com
+    name = Erich Rodrigues Ferrares
+    email = erich.rodriguesf@gmail.com
 
 [github]
     user = zokis
@@ -32,7 +32,7 @@
     smtpserver = smtp.gmail.com
     smtpserverport = 587
     smtpencryption = tls
-    smtpuser = marcelo.zokis@gmail.com
+    smtpuser = erich.rodriguesf@gmail.com
 
 [core]
     excludesfile = ~/.gitignore

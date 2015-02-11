@@ -1,19 +1,19 @@
 dotfiles
 ========
 
-### @zokis's dotfiles
+### @erich's dotfiles
 
-This project is a collections of dotfiles forked from https://github.com/deniscostadsc/dotfiles . I used just on Ubuntu.
+This project is a collections of dotfiles forked from https://github.com/zokis/dotfiles . I used just on Ubuntu.
 
 to download the project:
 
 ```bash
-git clone https://github.com/zokis/dotfiles.git
+git clone https://github.com/eferrares/dotfiles.git
 ```
 
 or
 
-https://github.com/zokis/dotfiles/archive/master.zip
+https://github.com/eferrares/dotfiles/archive/master.zip
 
 ###### install system applications:
 ```bash
@@ -75,5 +75,3 @@ source ~/.bashrc
 * dmigr='python manage.py migrate' # If the South is installed
 
 ---------------------
-### git Branch on PS1
-![branch](https://github.com/zokis/dotfiles/raw/master/.git_img.png "branch")
