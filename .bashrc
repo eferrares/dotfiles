@@ -145,3 +145,5 @@ function up(){
 
 #PIP downlaod CACHE
 export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
+# ctrl+s to reverse ctrl+r
+[[ $- == *i* ]] && stty -ixon
