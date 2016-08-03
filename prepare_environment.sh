@@ -33,6 +33,10 @@ echo '==='
 apt-get install -y npm
 
 echo '==='
+apt-get install -y postgresql pgadmin3
+su postgres -c psql postgres
+apt-get install postgresql-server-dev-9.5
+echo '==='
 if which pip > /dev/null; then
     pip install ipython
     echo '==='
