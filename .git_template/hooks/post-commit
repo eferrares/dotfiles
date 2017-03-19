@@ -1,3 +1,0 @@
-#!/bin/bash
-
-aplay $(~/.git_sounds/playsound.py) > /dev/null 2>&1 &
