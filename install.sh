@@ -12,6 +12,7 @@ function install() {
         --exclude "*.swp" \
         --exclude ".git_img.png" \
         --exclude "*~" \
+        --exclude "Dockerfile" \
         -av . ~
 }
 
