@@ -99,22 +99,13 @@ fi
 export HISTTIMEFORMAT="%d/%h/%y - %H:%M:%S "
 
 # Virtualenv Wrapper
-export WORKON_HOME='~/Envs'
-export VIRTUALENVWRAPPER_LOG_DIR='~/EnvsLogs'
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
-    . /usr/local/bin/virtualenvwrapper.sh
-else
-    echo "Virtualenv Wrapper apparently is not installed." 
-fi
+export WORKON_HOME='~/.virtualenvs'
+export PROJECT_HOME='~/dev'
+source /usr/local/bin/virtualenvwrapper.sh
 
 # Git aliases
 if [ -f ~/.aliases/git.sh ]; then
     . ~/.aliases/git.sh
-fi
-
-# Python alises
-if [ -f ~/.aliases/python.sh ]; then
-    . ~/.aliases/python.sh
 fi
 
 # External config
@@ -122,28 +113,3 @@ if [[ -r ~/.dircolors ]] && type -p dircolors >/dev/null; then
   eval $(dircolors -b "$HOME/.dircolors")
 fi
 
-function calc(){
-    bc <<< $1
-}
-
-function is_in(){
-    grep $1 <<< $2 > /dev/null 2>&1 && return 0 || return 1
-}
-
-function dorkon(){
-    sudo docker start $1 && sudo docker attach $1
-}
-
-function up(){
-    local x='';
-    for i in $(seq ${1:-1});
-        do x="$x../";
-    done;
-
-    cd $x;
-}
-
-#PIP downlaod CACHE
-export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
-# ctrl+s to reverse ctrl+r
-[[ $- == *i* ]] && stty -ixon

@@ -1,42 +1,39 @@
 [user]
-    name = Erich Rodrigues Ferrares
-    email = erich.rodriguesf@gmail.com
-
-[github]
-    user = eferrares
-
-[color]
-    ui = auto
-
-[color "diff"]
-    frag = blue reverse
-    meta = magenta reverse
-    old = red blink
-    new = 40 bold
-
-[color "branch"]
-    current = yellow reverse
-    local = yellow ul
-    remote = green bold
-    plain = red bold
-
-[color "status"]
-    added = yellow
-    changed = green ul
-    untracked = blue blink
-
-[push]
-    default = current
-
-[sendemail]
-    smtpserver = smtp.gmail.com
-    smtpserverport = 587
-    smtpencryption = tls
-    smtpuser = erich.rodriguesf@gmail.com
+	email = costa.marcos.pro@gmail.com
+	name = Marcos Costa Pinto
 
 [core]
-    excludesfile = ~/.gitignore
+	editor = vim
+
+[merge]
+	tool = meld
+
 [alias]
-    happify = !sh -c \"ln -s ~/.git/hooks/post-{commit,update} .git/hooks\"
-[init]
-    templatedir = ~/.git_template
+	st = status
+	co = checkout
+	cam = commit -am
+	caa = commit -a --amend
+	br = branch
+	ps = push
+	psf = push -f
+	pl = pull
+	f = fetch
+	d = diff
+	r = reset
+	rh = reset --hard
+
+	l = log
+	lo = log --oneline
+	l1 = log -1
+	logg = log --graph --abbrev-commit --decorate --all --format=format:'%C(bold cyan)%h%C(reset) - %C(yellow)[%ar]%C(reset) %C(white)%s%C(reset)%C(green bold)%d%C(reset) %C(dim white)- %aN%C(reset)'
+
+	rb = rebase
+	rbi = rebase -i
+	rbc = rebase --continue
+	rba = rebase --abort
+
+[color "status"]
+	added = green
+	changed = yellow
+	untracked = red
+

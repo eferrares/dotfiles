@@ -3,17 +3,13 @@ dotfiles
 
 ### @erich's dotfiles
 
-This project is a collections of dotfiles forked from https://github.com/zokis/dotfiles . I used just on Ubuntu.
+This project is a collections of dotfiles forked from https://github.com/eferrares/dotfiles.git, used just on Ubuntu.
 
-to download the project:
+Download the project:
 
 ```bash
 git clone https://github.com/eferrares/dotfiles.git
 ```
-
-or
-
-https://github.com/eferrares/dotfiles/archive/master.zip
 
 ###### install system applications:
 ```bash
